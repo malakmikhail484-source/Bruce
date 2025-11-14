@@ -1,3 +1,4 @@
+
 #ifndef Pins_Arduino_h
 #define Pins_Arduino_h
 
@@ -9,10 +10,11 @@ static const uint8_t RX = 3;
 static const uint8_t SDA = 21;
 static const uint8_t SCL = 22;
 
-static const uint8_t SS = 5;
-static const uint8_t MOSI = 23;
-static const uint8_t MISO = 19;
-static const uint8_t SCK = 18;
+// SPI PINS - تم توحيدها مع دبابيس الشاشة (12, 13, 14)
+static const uint8_t SS = 5;      // تم الحفاظ على قيمتها الأصلية
+static const uint8_t MOSI = 13;   // تم التعديل من 23 إلى 13 (لتطابق TFT)
+static const uint8_t MISO = 12;   // تم التعديل من 19 إلى 12 (لتطابق TFT)
+static const uint8_t SCK = 14;    // تم التعديل من 18 إلى 14 (لتطابق TFT)
 
 static const uint8_t A0 = 36;
 static const uint8_t A3 = 39;
